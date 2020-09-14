@@ -1,3 +1,8 @@
+# Requirements
+ - RabbitMQ
+
+# Setup
+
 install microservice:
 	`mvn clean install`
 	
@@ -22,3 +27,12 @@ important demo links for spring boot microservices:
 	  - http://localhost:8765/currency-conversion-service/currency-converter-feign/from/usd/to/inr/quantity/1000
 	eureka
 	  - http://localhost:8761
+	zipkin
+	  - http://localhost:9411/zipkin
+	  
+
+# Zipkin Distributed Tracing
+
+connect zipkin with rabbitMQ and run zipkin jar (windows):
+`set RABBIT_URI=amqp://localhost`
+`java -jar zipkin-server-2.21.7-exec.jar`
