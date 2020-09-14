@@ -1,10 +1,12 @@
 install microservice:
 	`mvn clean install`
+	
 build microservice:
     `mvn clean package`
 
 run spring application:
 	`mvn spring-boot:run`
+	
 run spring application jar on different port:
 	`java -Dserver.port=8001 -jar target\{micro-service-0.0.0}.jar`
 
